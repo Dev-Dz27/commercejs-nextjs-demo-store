@@ -187,6 +187,15 @@ class Header extends Component {
             <Link href="/collection">
               <a className="mr-4 font-color-black">Shop</a>
             </Link>
+            <Link href="/search">
+              <a>
+                <img
+                  src="/icon/search.svg"
+                  className=" search-icon "
+                  alt="search"
+                />
+              </a>
+            </Link>
             <Link href="/about">
               <a className="font-color-black">About</a>
             </Link>
@@ -198,6 +207,7 @@ class Header extends Component {
               className="w-32 mr-1 d-block d-sm-none"
               alt="Menu icon"
             />
+            
             <Link href="/">
               <a>
                 <img
@@ -207,6 +217,7 @@ class Header extends Component {
                 />
               </a>
             </Link>
+            
           </div>
           <div className="d-flex">
             { process.browser && this.renderLoginLogout() }
